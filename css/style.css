@@ -57,20 +57,14 @@ header .navbar ul li a:hover {
 
 header .navbar ul li ul {
     position: absolute;
-    left: 0;
     width: 220px;
-    background: #fff;
+    background: #adeaee;
     display: none;
 }
 
 header .navbar ul li ul li {
     width: 100%;
     border-top: 1px solid rgba(o,o,o,0.1);
-}
-
-header .navbar ul li ul li ul {
-    left: 220px;
-    top: 0px;
 }
 
 header .navbar ul li:focus-within > ul,
@@ -86,10 +80,9 @@ header label {
     font-size: 20px;
     color: #333;
     cursor: pointer;
-    display: none;
 }
 
-@media(max-width: 860px) {
+@media(max-width: 940px) {
 
     header {
         padding: 20px;
@@ -107,15 +100,27 @@ header label {
         background: #fff;
         border-top: 1px solid rgba(0,0,0,0.1);
         display: none;
+        text-align: right;
+        justify-content:end;
+        text-wrap: wrap;
+    }
+
+    header .navbar ul {
+        width: 260px;
+        display: flex;
+        position: absolute;
+        right: 0;
+        flex-direction: column;
     }
 
     header .navbar ul li {
-        width: 100%;
+        position: relative;
     }
 
     header .navbar ul li ul {
-        position: relative;
-        width: 100%;
+        margin-top: -60px;
+        margin-right: 260px;
+        width: 260px;
     }
 
     header .navbar ul li ul li {
@@ -124,7 +129,9 @@ header label {
 
     header .navbar ul li ul li ul {
         width: 100%;
-        left: 0;
+        margin-top: -60px;
+        margin-right: 260px;
+        position: absolute;
     }
 
     #menu-bar:checked ~ .navbar {
