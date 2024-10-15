@@ -17,7 +17,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Arial, sans-serif;
     text-decoration: none;
     min-height: 100vh;
     background-color: var(--secondary)
@@ -38,7 +38,7 @@ h1 {
 }
 
 h2 {
-    margin-top:20px;
+    margin-top:12px;
     margin-bottom: 8px;
 }
 
@@ -46,12 +46,130 @@ main article {
     border: solid 2px var(--contrast);
     border-radius: 20px;
     padding: 10px;
-    margin: 10px 50px;
+    margin: 20px 10px;
     background-color: var(--primary);
 }
 
-.list {
-    margin-left: 12px;
+a {
+    text-decoration: none;
+    color: var(--accent);
+}
+
+a:hover {
+    color: var(--contrast);
+}
+
+/* Kode til at få billederne i asides ud ved siden af tekst bokse */
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  clear: both;
+}
+
+aside {
+    width: 210px;
+    float: right;
+}
+
+/* forside */
+#intro {
+    width: calc(100% - 310px);
+    float: left;
+}
+
+#index1 {
+    height: 300px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+#hvorfor {
+    width: calc(100% - 310px);
+    float: right;
+}
+
+#index2 {
+    height: 240px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+/* forside slut */
+
+/* artikler */
+#muligheder {
+    width: calc(100% - 450px);
+    float: left;
+}
+
+#laven {
+    height: 280px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.xmargin {
+    margin-left: 20px;
+}
+
+.nowidth {
+    width: auto;
+}
+
+#posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55%;
+    float: right;
+}
+
+#posts ul li {
+    list-style: none;
+    padding: 10px;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+.arkimg {
+    width: 500px;
+}
+
+#fallfloat {
+    float: left;
+}
+
+#fald {
+    width: 38%;
+    margin-top: 25px;
+}
+/* artikler slut */
+
+footer {
+    background-color: var(--tertiary);
+    margin: 0;
+    color: var(--secondary);
+    padding: 20px 7%;
+    padding-bottom: 50px;
+    margin-top: 20px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer ul li {
+    float: left;
 }
 
 /* Responsiv navbar */
