@@ -207,6 +207,15 @@ aside {
 
 /* under artikle sider slut*/
 
+/* Reelle artikler */
+.nofat {
+    width: 75%;
+    min-width: 700px;
+    align-self: center;
+}
+
+
+/* Reelle artikler */
 
 footer {
     background-color: var(--tertiary);
@@ -227,6 +236,38 @@ footer ul {
 footer ul li {
     float: left;
 }
+
+/* Åbne forum og undersider */
+#formbox {
+    width: 40%;
+    min-width: 400px;
+    display: flex;
+    justify-content: center;
+    float: left;
+
+}
+
+#letters{
+    width: 55%;
+    float: right;
+}
+
+#tomheden {
+    background-image: url(../img/void.webp);
+    height: 1000px;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+}
+
+#footnomarg {
+    margin: 0;
+}
+
+#skrigbox {
+    margin: auto;
+}
+/* Åbne forum og udnersider slut */
 
 
 /* Responsiv navbar */
