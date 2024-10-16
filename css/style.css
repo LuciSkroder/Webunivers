@@ -324,7 +324,6 @@ header .navbar ul li ul {
 
 header .navbar ul li ul li {
     width: 100%;
-    border-top: 1px solid rgba(o,o,o,0.1);
 }
 
 header .navbar ul li:focus-within > ul,
