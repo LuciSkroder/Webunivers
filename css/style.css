@@ -5,7 +5,7 @@
 }
 
 :root {
-    --primary: #ADEAEE;
+    --primary: #def1f3;
     --secondary: #F4F4F4;
     --tertiary: #303633;
     --accent: #E086D3;
@@ -104,6 +104,7 @@ aside {
     height: 240px;
     margin-top: 20px;
     border-radius: 8px;
+    margin-left: 10px;
 }
 /* forside slut */
 
@@ -266,6 +267,10 @@ footer ul li {
 
 #skrigbox {
     margin: auto;
+}
+
+.block {
+    display: block;
 }
 /* Åbne forum og udnersider slut */
 
